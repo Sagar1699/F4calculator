@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+
+  display: flex;
+  margin-top: 100px;
+  margin-left: 525px;
+  border-radius: 20px;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  min-height: 500px;
+  box-shadow: -18px 10px 30px rgba(251, 24, 78, 0.22)
+  , 18px -10px 30px rgba(0, 87, 255, 0.22);
+  gap: 12px;
+}
+
+.container h2 {
+  margin: 15px;
+  font-size: 45px;
+}
+
+input {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: transparent !important;
+  border: 3px solid black;
+  margin: 10px;
+  width: 20vw;
+  font-size: large;
+  font-weight: 600;
+  /* color: white; */
+}
+
+input::placeholder{
+    font-size: large;
+}
+input:focus {
+  outline: none;
+}
+
+button {
+  padding: 7px 20px;
+  margin: 10px 15px;
+  border-radius: 5px;
+  font-size: 32px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: black;
+}
+button:hover {
+  background-color: rgb(40, 235, 22);
+
+}
+.msg {
+  margin-top: 10px;
+  font-size: 30px;
+}
+.err{
+  color: red;
+}
+
+.suc2{
+  color: green ;
+}
+.suc{
+    margin-bottom: 20px;
+}
+
+.suc3{
+  color: red ;
+}
+
+@media screen and (max-width: 750px) {
+  .container h2 {
+    margin: 20px;
+    font-size: 34px;
+  }
+  button {
+    padding: 2.5px 10px;
+    margin: 5px;
+   
+    font-size: 22px;
+   
+  }
+  input {
+   
+    width: 50vw;
+   
+  }
+}
